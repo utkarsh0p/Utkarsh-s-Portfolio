@@ -1,8 +1,9 @@
-import {Navbar} from '@components'
+import {Navbar, Dock} from '@components'
 function App() {
   return (
     <>
       <Navbar />
+      <Dock/>
     </>
   )
 }
