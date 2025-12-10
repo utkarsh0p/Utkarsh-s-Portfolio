@@ -1,2 +1,3 @@
-import Navbar from "@components/Navbar.js"
-export { Navbar };
+import Navbar from "@components/Navbar.jsx"
+import Dock from "@components/Dock.jsx"
+export { Navbar, Dock};
