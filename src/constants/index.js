@@ -2,7 +2,7 @@ const navLinks = [
   {
     id: 1,
     name: "Projects",
-    type: "finder",
+    type: "project",
   },
   {
     id: 3,
@@ -37,8 +37,8 @@ const navIcons = [
 
 const dockApps = [
   {
-    id: "finder",
-    name: "Portfolio", // was "Finder"
+    id: "project",
+    name: "Portfolio", // was "project"
     icon: "finder.png",
     canOpen: true,
   },
@@ -101,32 +101,26 @@ const blogPosts = [
 
 const techStack = [
   {
-    id:1,
     category: "Frontend",
     items: ["React.js", "Next.js", "TypeScript"],
   },
   {
-    id:2,
     category: "Mobile",
     items: ["React Native", "Expo"],
   },
   {
-    id:3,
     category: "Styling",
     items: ["Tailwind CSS", "Sass", "CSS"],
   },
   {
-    id:4,
     category: "Backend",
     items: ["Node.js", "Express", "NestJS", "Hono"],
   },
   {
-    id:5,
     category: "Database",
     items: ["MongoDB", "PostgreSQL"],
   },
   {
-    id:6,
     category: "Dev Tools",
     items: ["Git", "GitHub", "Docker"],
   },
@@ -234,8 +228,8 @@ const WORK_LOCATION = {
       name: "Nike Ecommerce Website Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-10 left-5", // icon position inside project
+      windowPosition: "top-[5vh] left-5", // optional: project window position
       children: [
         {
           id: 1,
@@ -287,7 +281,7 @@ const WORK_LOCATION = {
       name: "AI Resume Analyzer",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-60 left-7",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
@@ -340,7 +334,7 @@ const WORK_LOCATION = {
       name: "Food Delivery App",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-20 left-69",
       windowPosition: "top-[33vh] left-7",
       children: [
         {
@@ -499,7 +493,7 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  project: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
