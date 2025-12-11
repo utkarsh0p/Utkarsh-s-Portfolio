@@ -7,7 +7,7 @@ body {
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url('wallpapers/macWave2.jpg');
+  background-image: url('/wallpapers/macWave2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
