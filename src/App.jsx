@@ -1,10 +1,10 @@
-import { gsap } from "gsap";
-import { Draggable } from "gsap/Draggable";
+import { gsap } from 'gsap'
+import { Draggable } from 'gsap/Draggable'
 
-import { Navbar, Dock, Home } from "@components";
-import { Terminal, Safari, Resume, Contacts, Gallery, Projects } from "@windows";
+import { Navbar, Dock, Home } from '@components'
+import { Terminal, Safari, Resume, Contacts, Gallery, Projects } from '@windows'
 
-gsap.registerPlugin(Draggable);
+gsap.registerPlugin(Draggable)
 
 function App() {
   return (
@@ -19,11 +19,8 @@ function App() {
         </div>
       )}
 
-      {/* Main Layout */}
       <Navbar />
       <Dock />
-
-      {/* Windows */}
       <Terminal />
       <Home />
       <Safari />
@@ -32,7 +29,7 @@ function App() {
       <Gallery />
       <Projects />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

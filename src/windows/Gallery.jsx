@@ -1,6 +1,6 @@
-import WindowWrapper from "@hoc/WindowWrapper.jsx";
-import { WindowControlls } from "@components";
-import { photosLinks, gallery } from "@constants/index.js";
+import WindowWrapper from '@hoc/WindowWrapper.jsx'
+import { WindowControlls } from '@components'
+import { photosLinks, gallery } from '@constants/index.js'
 
 const Photos = () => {
   return (
@@ -37,7 +37,7 @@ const Photos = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default WindowWrapper(Photos, "photos");
+export default WindowWrapper(Photos, 'photos')

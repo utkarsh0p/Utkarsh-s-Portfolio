@@ -1,6 +1,6 @@
-import WindowWrapper from "@hoc/WindowWrapper.jsx";
-import { WindowControlls } from "@components";
-import { socials } from "@constants/index.js";
+import WindowWrapper from '@hoc/WindowWrapper.jsx'
+import { WindowControlls } from '@components'
+import { socials } from '@constants/index.js'
 
 const Contact = () => {
   return (
@@ -20,7 +20,12 @@ const Contact = () => {
               className="rounded-lg p-3 w-60 hover:-translate-y-0.5 hover:scale-105 origin-center transition-all duration-300"
               style={{ backgroundColor: bg }}
             >
-              <a href={link} target="_blank" rel="noreferrer" className="space-y-5">
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="space-y-5"
+              >
                 <img src={icon} alt={text} className="w-6 h-6" />
                 <p>{text}</p>
               </a>
@@ -29,9 +34,7 @@ const Contact = () => {
         </ul>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default WindowWrapper(Contact, "contact");
- 
-
+export default WindowWrapper(Contact, 'contact')

@@ -5,20 +5,27 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 
 //absolute path
-import {resolve, dirname} from 'path'
-import {fileURLToPath} from 'url'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 export default defineConfig({
-  plugins: [react(),
-    tailwindcss()
-  ],
-  resolve:{
-    alias:{
-      "@components": resolve(dirname(fileURLToPath(import.meta.url)),"src/components"),
-      "@constants": resolve(dirname(fileURLToPath(import.meta.url)),"src/constants"),
-      "@store": resolve(dirname(fileURLToPath(import.meta.url)),"src/store"),
-      "@hoc": resolve(dirname(fileURLToPath(import.meta.url)),"src/hoc"),
-      "@windows": resolve(dirname(fileURLToPath(import.meta.url)),"src/windows"),
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@components': resolve(
+        dirname(fileURLToPath(import.meta.url)),
+        'src/components'
+      ),
+      '@constants': resolve(
+        dirname(fileURLToPath(import.meta.url)),
+        'src/constants'
+      ),
+      '@store': resolve(dirname(fileURLToPath(import.meta.url)), 'src/store'),
+      '@hoc': resolve(dirname(fileURLToPath(import.meta.url)), 'src/hoc'),
+      '@windows': resolve(
+        dirname(fileURLToPath(import.meta.url)),
+        'src/windows'
+      )
     }
   }
 })
