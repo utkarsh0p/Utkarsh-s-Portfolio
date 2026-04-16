@@ -43,12 +43,6 @@ const dockApps = [
     canOpen: true
   },
   {
-    id: 'safari',
-    name: 'Articles',
-    icon: 'safari.png',
-    canOpen: true
-  },
-  {
     id: 'photos',
     name: 'Gallery',
     icon: 'photos.png',
@@ -65,16 +59,6 @@ const dockApps = [
     name: 'Skills',
     icon: 'terminal.png',
     canOpen: true
-  }
-]
-
-const blogPosts = [
-  {
-    id: 1,
-    date: 'Sep 2, 2025',
-    title: 'This is the google Link',
-    image: '/images/blog1.png',
-    link: 'https://google.com'
   }
 ]
 
@@ -169,7 +153,6 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
   techStack,
   socials,
   photosLinks,
@@ -221,7 +204,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 3,
-      name: 'Buger Shop Project Frontend',
+      name: 'Freelance Burger Shop Site',
       icon: '/images/folder.png',
       position: 'top-20 left-69',
       children: [
@@ -229,7 +212,7 @@ const WORK_LOCATION = {
           id: 3,
           name: 'BurgerShop',
           fileType: 'url',
-          href: 'https://freelance-burger-shop-site.vercel.app/',
+          href: 'https://redesigned-shop-site.vercel.app/',
           position: 'top-10 right-20'
         }
       ]
@@ -247,6 +230,57 @@ const WORK_LOCATION = {
           name: 'MERN Thinkboard',
           fileType: 'url',
           href: 'http://15.206.149.219:5173/',
+          position: 'top-10 right-20'
+        }
+      ]
+    },
+
+    // ▶ Project 5
+    {
+      id: 5,
+      name: 'Chrome RAG Extension',
+      icon: '/images/folder.png',
+      position: 'top-10 left-130',
+      children: [
+        {
+          id: 5,
+          name: 'Chrome RAG Extension',
+          fileType: 'url',
+          href: 'https://github.com/utkarsh0p/chrome-rag-extension',
+          position: 'top-10 right-20'
+        }
+      ]
+    },
+
+    // ▶ Project 6
+    {
+      id: 6,
+      name: 'PR Conductor',
+      icon: '/images/folder.png',
+      position: 'top-60 left-130',
+      children: [
+        {
+          id: 6,
+          name: 'PR Conductor',
+          fileType: 'url',
+          href: 'https://github.com/utkarsh0p/PR_Conductor',
+          position: 'top-10 right-20'
+        }
+      ]
+    },
+
+    // ▶ Project 7
+    {
+      id: 7,
+      name: 'Freelance Ecommerce Site',
+      icon: '/images/folder.png',
+      position: 'top-110 left-130',
+      children: [
+        {
+          id: 7,
+          name: 'Ecommerce Site',
+          fileType: 'url',
+          href: 'http://3.80.154.24:5173/',
           position: 'top-10 right-20'
         }
       ]
@@ -322,8 +356,7 @@ const WINDOW_CONFIG = {
   project: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null }

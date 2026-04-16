@@ -2,7 +2,7 @@ import { gsap } from 'gsap'
 import { Draggable } from 'gsap/Draggable'
 
 import { Navbar, Dock, Home } from '@components'
-import { Terminal, Safari, Resume, Contacts, Gallery, Projects } from '@windows'
+import { Terminal, Resume, Contacts, Gallery, Projects } from '@windows'
 
 gsap.registerPlugin(Draggable)
 
@@ -23,8 +23,7 @@ function App() {
       <Dock />
       <Terminal />
       <Home />
-      <Safari />
-      <Resume />
+<Resume />
       <Contacts />
       <Gallery />
       <Projects />
