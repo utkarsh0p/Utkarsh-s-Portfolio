@@ -56,7 +56,7 @@ const Projects = () => {
         <div className="w-6"></div>
       </div>
 
-      <div className="p-10 bg-white space-y-12 min-h-[60vh]">
+      <div className="p-10 max-sm:p-6 bg-white space-y-12 min-h-[60vh] max-sm:min-h-full">
         <h3 className="text-xl font-semibold text-gray-700 ml-5">My Work</h3>
         <ul className="flex items-center justify-center gap-12 flex-wrap">
           {projects.map((project) => (

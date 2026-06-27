@@ -23,7 +23,8 @@ const navIcons = [
   },
   {
     id: 2,
-    img: '/icons/search.svg'
+    img: '/icons/search.svg',
+    mobileHidden: true
   },
   {
     id: 3,
@@ -31,7 +32,8 @@ const navIcons = [
   },
   {
     id: 4,
-    img: '/icons/mode.svg'
+    img: '/icons/mode.svg',
+    mobileHidden: true
   }
 ]
 

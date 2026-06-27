@@ -9,6 +9,15 @@ const useWindowStore = create(
 
     openWindow: (windowKey, data = null) =>
       set((state) => {
+        if (window.innerWidth < 640) {
+          Object.keys(state.windows).forEach((key) => {
+            if (key !== windowKey) {
+              state.windows[key].isOpen = false
+              state.windows[key].zIndex = INITIAL_Z_INDEX
+              state.windows[key].data = null
+            }
+          })
+        }
         const win = state.windows[windowKey]
         win.isOpen = true
         win.zIndex = state.nextZIndex

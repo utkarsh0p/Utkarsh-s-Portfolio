@@ -23,8 +23,8 @@ const Navbar = () => {
 
         <div>
           <ul className="nav-icons">
-            {navIcons.map(({ id, img }) => (
-              <li key={id}>
+            {navIcons.map(({ id, img, mobileHidden }) => (
+              <li key={id} className={mobileHidden ? 'max-sm:hidden' : ''}>
                 <img src={img} className="icon-hover" alt="icons" />
               </li>
             ))}
