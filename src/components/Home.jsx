@@ -11,11 +11,12 @@ const Home = () => {
   const containerRef = useRef(null)
 
   useEffect(() => {
+    if (window.innerWidth < 640) return
     const icons = containerRef.current.querySelectorAll('.home-icon')
 
     icons.forEach((icon) => {
       Draggable.create(icon, {
-        bounds: window, // keep inside screen
+        bounds: window,
         inertia: true
       })
     })

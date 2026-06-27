@@ -7,7 +7,7 @@ const Photos = () => {
     <>
       <div id="window-header">
         <WindowControlls target="photos" />
-        <h2>Photos</h2>
+        <h2 className="flex-1 text-center">Photos</h2>
       </div>
 
       <div className="flex">

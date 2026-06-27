@@ -12,6 +12,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString()
 
 const Resume = () => {
+  const isMobile = window.innerWidth < 640
+
   return (
     <>
       <div id="window-header">
@@ -28,7 +30,12 @@ const Resume = () => {
       </div>
 
       <Document file="files/resume.pdf">
-        <Page pageNumber={1} renderTextLayer rederAnnotationLayer />
+        <Page
+          pageNumber={1}
+          width={isMobile ? window.innerWidth : undefined}
+          renderTextLayer
+          rederAnnotationLayer
+        />
       </Document>
     </>
   )
