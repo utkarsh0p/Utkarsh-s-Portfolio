@@ -19,7 +19,8 @@ const navLinks = [
 const navIcons = [
   {
     id: 1,
-    img: '/icons/wifi.svg'
+    img: '/icons/wifi.svg',
+    mobileHidden: true
   },
   {
     id: 2,
@@ -28,7 +29,8 @@ const navIcons = [
   },
   {
     id: 3,
-    img: '/icons/user.svg'
+    img: '/icons/user.svg',
+    mobileHidden: true
   },
   {
     id: 4,

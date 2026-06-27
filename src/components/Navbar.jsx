@@ -30,6 +30,13 @@ const Navbar = () => {
             ))}
           </ul>
 
+          <p
+            className="hidden max-sm:block text-sm font-medium cursor-pointer hover:underline"
+            onClick={() => openWindow('resume')}
+          >
+            Resume
+          </p>
+
           <time>{dayjs().format('hh:mm A')}</time>
         </div>
       </nav>
