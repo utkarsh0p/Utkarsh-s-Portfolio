@@ -17,7 +17,7 @@ const Terminal = () => {
           show tech stack
         </p>
         <div className="label">
-          <p className="w-32">Category</p>
+          <p className="w-28">Category</p>
           <p>Technologies</p>
         </div>
 
@@ -39,7 +39,7 @@ const Terminal = () => {
 
         <div className="footnote">
           <p>
-            <Check size={20} />5 out of 5 stacks loaded successfully (100%)
+            <Check size={20} />4 out of 4 stacks loaded successfully (100%)
           </p>
           <p className="text-black" fill="black">
             <Flag size={15} />

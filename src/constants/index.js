@@ -64,24 +64,20 @@ const dockApps = [
 
 const techStack = [
   {
-    category: 'Frontend',
-    items: ['React.js', 'JavaScript']
+    category: 'Languages',
+    items: ['C', 'C++', 'JavaScript', 'Python', 'SQL']
   },
   {
-    category: 'Styling',
-    items: ['Tailwind CSS', 'CSS']
+    category: 'AI & GenAI',
+    items: ['LangChain', 'LangGraph', 'RAG', 'Vector Embeddings', 'LLM APIs', 'MCP']
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'NestJS']
+    category: 'Web & Backend',
+    items: ['HTML', 'CSS', 'React.js', 'Zustand', 'Node.js', 'Express.js', 'FastAPI', 'MongoDB', 'Tailwind CSS']
   },
   {
-    category: 'Database',
-    items: ['MongoDB', 'MySQL']
-  },
-  {
-    category: 'Dev Tools',
-    items: ['Git', 'GitHub', 'Docker']
+    category: 'DevOps & Tools',
+    items: ['Docker', 'GitHub', 'GitHub Actions', 'Git', 'Postman', 'Vim', 'Linux']
   }
 ]
 
@@ -133,19 +129,7 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: ''
-  },
-  {
-    id: 2,
-    img: ''
-  },
-  {
-    id: 3,
-    img: ''
-  },
-  {
-    id: 4,
-    img: ''
+    img: '/images/utkarshimage1.jpeg'
   }
 ]
 
@@ -166,37 +150,38 @@ const WORK_LOCATION = {
   icon: '/icons/work.svg',
   kind: 'folder',
   children: [
-    // ▶ Project 1
+    // ▶ Project 1 — Featured
     {
       id: 1,
-      name: 'Cocktail Gsap Project Frontend',
+      name: 'Agentic Browser Extension',
       icon: '/images/folder.png',
-      position: 'top-10 left-5', // icon position inside project
+      featured: true,
+      position: 'top-14 left-8',
       children: [
         {
           id: 1,
-          name: 'Cocktails',
-          icon: '/images/safari.png',
+          name: 'Agentic Browser Extension',
           fileType: 'url',
-          href: 'https://cocktails-gsap-project.vercel.app/',
+          href: 'https://github.com/utkarsh0p/agentic-browser-extension',
           position: 'top-10 right-20'
         }
       ]
     },
 
-    // ▶ Project 2
+    // ▶ Project 2 — Featured
     {
       id: 2,
-      name: 'GPT3 Frontend Project',
+      name: 'PR Conductor',
       icon: '/images/folder.png',
-      position: 'top-60 left-7',
+      featured: true,
+      position: 'top-44 left-8',
       children: [
         {
           id: 2,
-          name: 'GPT3 Frontend',
+          name: 'PR Conductor',
           fileType: 'url',
-          href: 'https://gpt3-frontend-project-gu24.vercel.app/',
-          position: 'top-20 left-20'
+          href: 'https://github.com/utkarsh0p/PR_Conductor',
+          position: 'top-10 right-20'
         }
       ]
     },
@@ -206,7 +191,7 @@ const WORK_LOCATION = {
       id: 3,
       name: 'Freelance Burger Shop Site',
       icon: '/images/folder.png',
-      position: 'top-20 left-69',
+      position: 'top-72 left-8',
       children: [
         {
           id: 3,
@@ -221,16 +206,16 @@ const WORK_LOCATION = {
     // ▶ Project 4
     {
       id: 4,
-      name: 'MERN Thinkboard Fullstack Project',
+      name: 'GPT3 Frontend Project',
       icon: '/images/folder.png',
-      position: 'top-70 left-69',
+      position: 'top-100 left-8',
       children: [
         {
           id: 4,
-          name: 'MERN Thinkboard',
+          name: 'GPT3 Frontend',
           fileType: 'url',
-          href: 'http://15.206.149.219:5173/',
-          position: 'top-10 right-20'
+          href: 'https://gpt3-frontend-project-gu24.vercel.app/',
+          position: 'top-20 left-20'
         }
       ]
     },
@@ -238,49 +223,16 @@ const WORK_LOCATION = {
     // ▶ Project 5
     {
       id: 5,
-      name: 'Chrome RAG Extension',
+      name: 'Cocktail Gsap Project Frontend',
       icon: '/images/folder.png',
-      position: 'top-10 left-130',
+      position: 'top-128 left-8',
       children: [
         {
           id: 5,
-          name: 'Chrome RAG Extension',
+          name: 'Cocktails',
+          icon: '/images/safari.png',
           fileType: 'url',
-          href: 'https://github.com/utkarsh0p/chrome-rag-extension',
-          position: 'top-10 right-20'
-        }
-      ]
-    },
-
-    // ▶ Project 6
-    {
-      id: 6,
-      name: 'PR Conductor',
-      icon: '/images/folder.png',
-      position: 'top-60 left-130',
-      children: [
-        {
-          id: 6,
-          name: 'PR Conductor',
-          fileType: 'url',
-          href: 'https://github.com/utkarsh0p/PR_Conductor',
-          position: 'top-10 right-20'
-        }
-      ]
-    },
-
-    // ▶ Project 7
-    {
-      id: 7,
-      name: 'Freelance Ecommerce Site',
-      icon: '/images/folder.png',
-      position: 'top-110 left-130',
-      children: [
-        {
-          id: 7,
-          name: 'Ecommerce Site',
-          fileType: 'url',
-          href: 'http://3.80.154.24:5173/',
+          href: 'https://cocktails-gsap-project.vercel.app/',
           position: 'top-10 right-20'
         }
       ]

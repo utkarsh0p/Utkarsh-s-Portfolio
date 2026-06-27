@@ -34,11 +34,16 @@ const Home = () => {
         {projects.map((project) => (
           <li
             key={project.id}
-            className={`home-icon absolute select-none cursor-pointer group ${project.position}`}
+            className={`home-icon absolute select-none cursor-pointer group ${project.position} ${project.featured ? 'featured' : ''}`}
             onClick={() => openUrl(project)}
           >
             <img src={project.icon} alt={project.name} />
             <p>{project.name}</p>
+            {project.featured && (
+              <span className="text-[10px] font-bold text-amber-400 mt-1">
+                ★ Featured
+              </span>
+            )}
           </li>
         ))}
       </ul>
