@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
         <img
           src={project.icon}
           alt={project.name}
-          className="w-16 h-16 object-contain"
+          className="w-16 h-16 max-sm:w-12 max-sm:h-12 object-contain"
         />
       </div>
       <p className="text-sm text-gray-700 font-medium text-center max-w-32">
@@ -56,9 +56,9 @@ const Projects = () => {
         <div className="w-6"></div>
       </div>
 
-      <div className="p-10 max-sm:p-6 bg-white space-y-12 min-h-[60vh] max-sm:min-h-full">
-        <h3 className="text-xl font-semibold text-gray-700 ml-5">My Work</h3>
-        <ul className="flex items-center justify-center gap-12 flex-wrap">
+      <div className="p-10 max-sm:p-4 max-sm:pt-6 bg-white space-y-12 max-sm:space-y-4 min-h-[60vh] max-sm:min-h-full">
+        <h3 className="text-xl font-semibold text-gray-700 ml-5 max-sm:hidden">My Work</h3>
+        <ul className="flex items-center justify-center gap-12 max-sm:gap-6 flex-wrap">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
